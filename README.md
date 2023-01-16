@@ -23,22 +23,6 @@ Com base nessa aplicação iremos criar testes.
 - `Utilizar a biblioteca @testing-library/react-hooks`: Biblioteca que permite testes de hooks com facilidade;
 - `Criar testes de hooks`: Testando a execução de hooks sem a necesidade de mocks dos hooks nativos.
 
-## 📁 Acesso ao projeto
-
-Você pode acessar as seguintes branches do projeto para navegar entre as aulas e desafios:
-
-- [Projeto Inicial](https://github.com/alura-cursos/react-native-criando-testes-para-sua-aplicacao) ([baixar o zip](https://github.com/alura-cursos/react-native-criando-testes-para-sua-aplicacao/archive/refs/heads/main.zip))
-- [Aula 1 completa](https://github.com/alura-cursos/react-native-criando-testes-para-sua-aplicacao/tree/Aula1)
-- [Aula 2 completa](https://github.com/alura-cursos/react-native-criando-testes-para-sua-aplicacao/tree/Aula2)
-  - [Faça como eu Fiz](https://github.com/alura-cursos/react-native-criando-testes-para-sua-aplicacao/tree/FCEFAula2)
-- [Aula 3 completa](https://github.com/alura-cursos/react-native-criando-testes-para-sua-aplicacao/tree/Aula3)
-  - [Faça como eu Fiz](https://github.com/alura-cursos/react-native-criando-testes-para-sua-aplicacao/tree/FCEFAula3)
-- [Aula 4 completa](https://github.com/alura-cursos/react-native-criando-testes-para-sua-aplicacao/tree/Aula4)
-  - [Faça como eu Fiz](https://github.com/alura-cursos/react-native-criando-testes-para-sua-aplicacao/tree/FCEFAula4)
-  - [Desafio do Coverage 100%](https://github.com/alura-cursos/react-native-criando-testes-para-sua-aplicacao/tree/DesafioCoverage)
-
-Além disso, todos os _commits_ do curso estão disponíveis a partir [deste link](https://github.com/alura-cursos/react-native-criando-testes-para-sua-aplicacao/commits/DesafioCoverage)!
-
 ## 🛠️ Abrir e rodar o projeto
 
 Para instalar o React Native com Expo na sua máquina, siga os passos do [artigo de configuração de ambiente](https://www.alura.com.br/artigos/como-instalar-configurar-expo-do-react-native).

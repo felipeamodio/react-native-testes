@@ -27,3 +27,14 @@ Mais métodos globais podem ser acessados pela documentação, clicando neste li
 Experimente também os métodos only e skip nos seus testes, mas lembre-se de que não é recomendado que você mantenha eles ao mandar os testes para produção. Exclua testes desnecessários e mantenha históricos em sistemas de versionamento, como o git.
  */
 
+
+/**
+Nesta aula, aprendemos a simular funções para que os dados originais não sejam afetados. Usamos alguns métodos do jest para trabalhar com mocks, e abaixo estão os mais utilizados:
+
+mockClear(): Limpa todos os registros das chamadas das funções;
+mockReset(): Faz tudo o que mockClear() faz, e também limpa as implementações e valores a serem retornados, voltando a ser como quando criamos uma função jest.fn();
+mockRestore(): Faz tudo o que mockClear() faz, e também volta a implementação de método original;
+mockImplementation(fn): Seta uma nova implementação para a função mockada. Há um atalho para esse método: jest.fn(implementation);
+mockReturnValue(value): Seta um valor fixo a ser retornado.
+Você pode verificar mais funções neste link da documentação. https://jestjs.io/pt-BR/docs/mock-function-api
+*/

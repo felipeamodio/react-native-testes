@@ -38,3 +38,19 @@ mockImplementation(fn): Seta uma nova implementação para a função mockada. H
 mockReturnValue(value): Seta um valor fixo a ser retornado.
 Você pode verificar mais funções neste link da documentação. https://jestjs.io/pt-BR/docs/mock-function-api
 */
+
+/**
+Além do mock do arquivo ou módulo completo, podemos também mockar um único método. Veja o exemplo abaixo de como podemos mockar o método useEffect do próprio React Native:
+
+import React from 'react';
+
+test('mock de um método', () => {
+    jest.spyOn(React, 'useEffect').mockImplementation((f) => f());
+});
+
+Neste exemplo, o useEffect mockado irá executar a função (f) logo ao ser chamado.
+
+Você pode acessar a documentação do spyOn neste link. https://jestjs.io/pt-BR/docs/jest-object#jestspyonobject-methodname
+
+*/
+

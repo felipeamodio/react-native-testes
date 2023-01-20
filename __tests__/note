@@ -54,3 +54,35 @@ Você pode acessar a documentação do spyOn neste link. https://jestjs.io/pt-BR
 
 */
 
+/**
+SNAPSHOTS
+
+Um tipo de teste muito interessante são os snapshots. Como funciona?
+Podemos testar componentes da aplicação usando snapshots, que basicamente verificam se a estrutura do componente permanece a mesma, usando a referência JSON que a renderização retorna.
+Porém, devemos ter cuidado com esse tipo de teste, pois ele não testa de fato a regra de negócio, mas, sim, as estruturas e até estilos do componente. Além disso, adicionar esse teste pode não fazer sentido algum no caso de um componente que sofre alterações constantes, já que ele sempre irá falhar e solicitar que atualizemos a snapshot.
+
+Então, quando devemos usar testes de snapshot?
+Em componentes simples, que não contém regras de negócio e que não mudam com frequência. É importante sempre tomar cuidado para que o coverage gerado por esse teste não seja aplicado a subcomponentes, esquecendo, assim, de avaliar se eram necessários testes daqueles também.
+
+Abaixo, você pode ver um exemplo de teste de snapshot:
+
+import React from 'react';
+import { render } from '@testing-library/react-native';
+
+import Componente from '../Componente.js';
+
+describe('Componente.js', () => {
+  it('deve renderizar sem erros', () => {
+    const { toJSON } = render(<Componente />);
+
+    expect(toJSON()).toMatchSnapshot();
+  });
+});
+
+
+Você pode rodar npm jest -u --coverage=false para atualizar as snapshots que falharam, ou até adicionar este comando aos seus scripts no package.json.
+
+
+
+*/
+

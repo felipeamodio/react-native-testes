@@ -8,13 +8,15 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "api": "json-server --host 192.168.1.112 --watch db.json",
+    "api": "json-server --host 192.168.1.106 --watch db.json",
     "test": "jest --watch --coverage=false",
     "testFinal": "jest"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.4.1",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/react-native": "^11.5.0",
     "axios": "^0.25.0",
     "expo": "~44.0.0",
     "expo-blur": "~11.0.0",
@@ -29,8 +31,7 @@
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@testing-library/react-native": "^11.5.0"
+    "@babel/core": "^7.12.9"
   },
   "private": true,
   "jest": {
@@ -40,11 +41,11 @@
     ],
     "collectCoverage": true,
     "collectCoverageFrom": [
-    "**/*.{js,jsx}",
-    "!**/coverage/**",
-    "!**/node_modules/**",
-    "!**/babel.config.js",
-    "!**/jest.setup.js"
-  ]
+      "**/*.{js,jsx}",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/babel.config.js",
+      "!**/jest.setup.js"
+    ]
   }
 }
